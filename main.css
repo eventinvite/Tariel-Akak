@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face {
+    font-family: 'Thabit';
+    src: url('fonts/Thabit-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'Thabit';
+    src: url('fonts/Thabit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+}
+body {
+	line-height: 1;
+    font-family: 'Thabit', Arial, sans-serif;
+}
+img{
+  width: 100%;
+}
+h1{
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ h2{
+    font-size: 24px;
+    font-family: 'Thabit', Arial, sans-serif;
+    font-weight: bold;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media (max-width: 850px) {
+    body{
+        font-size: 16px;
+        text-align: center;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    header{
+        padding-top: 70px;
+        margin-bottom: 50px;
+    }
+    .header__offer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .couple-img{
+        width: 50%;
+    }
+    .header__offer::before{
+        content: '';
+        display: block;
+        width: 34px;
+        height: 34px;
+        background-image: url(./red-heart.svg);
+        position: absolute;
+        left: 70px;
+    }
+    .header__offer::after{
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-image: url(./red-heart2.svg);
+        position: absolute;
+        right: 70px;
+        top: 410px;
+    }
+    .ring{
+        width: 40px;
+        margin: 25px 0;
+    }
+    .love__title{
+        font-size: 20px;
+        margin: 25px 0;
+    }
+    .love__title_1{
+        font-size: 28px;
+    }
+    .love__title_1::after{
+        content: '';
+        display: inline-block;
+        background-image: url('./heart.jpg');
+        width: 30px;
+        height: 30px;
+        margin-left:10px;
+    }
+    section{
+        margin-bottom: 70px;
+    }
+    .kids__title{
+        margin-bottom: 28px;
+    }
+    .heart{
+        width: 30px;
+        margin: 10px 0 25px;
+    }
+    .example1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 27px;
+      }
+      .example__img{
+        max-width: 125px;
+        border-radius: 10px
+      }
+      .example2{
+        display: flex;
+        justify-content: space-around;
+      }
+      .example__img2{
+        max-width: 180px;
+        border-radius: 10px;
+      }
+      .data__offer{
+        display: inline-flex;
+        margin: 20px 0;
+        position: relative;
+    }
+      }
+      .data__text{
+        margin-right: 20px;
+      }
+      .data__text::after{
+        content:'';
+        display: block;
+        background-image: url('./heart-line.svg');
+        width: 9px;
+        height: 31px;
+        position: absolute;
+        left: 94px;
+        top: -8px;
+    }
+      table{
+        width: 80%;
+        height: 150px;
+        margin: 0 auto;
+      }
+      .red{
+        color: #B00303;
+      }
+      .place__text{
+        margin: 20px 0;
+      }
+      .place__btn{
+        color: #D22C2C;
+        text-decoration: none;
+      }
+      .map{
+        margin-top: 20px;
+        border-radius:  10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+      }
+      
+      .input {
+        width: 311px;
+        height: 30px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 0;
+      }
+      
+      .input-container label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #000;
+        z-index: 1;
+        margin: auto 0 auto 10px;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+      
+      .input-container input:focus + label,
+      .input-container input:not(:placeholder-shown) + label {
+        bottom: 10px;
+        left: 5px;
+        font-size: 12px;
+        color: #333;
+      
+      }
+      .input-container {
+        position: relative;
+      }
+      .invate__titl{
+        margin-bottom: 20px
+      }
+      .input-phone {
+        margin: 15px 0 30px;
+      }
+      .radio-container{
+        width: 180px;
+        height: 24px;
+        display: flex;
+        text-align: left;
+        align-items: center;
+      }
+      .radio-container_2{
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .radio-container input {
+          display: block;
+          cursor: pointer;
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px solid #000;
+      }
+      .radio-info{
+        width: 100px;
+      }
+      
+      .radio-container input[type="radio"]:checked + input{
+          background-color: #000;
+      }
+      .radio-container_1{
+        margin: 10px 0 30px;
+      }
+      .btn{
+        width: 100%;
+        height: 46px;
+        border: 2px solid #000;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #000;
+        transition: solid 0.3s ease;
+      }
+      .btn:hover{
+        background-color: #fff;
+        color: #000;
+      }
+      .invate__title{
+        margin-bottom: 20px;
+      }
+      footer{
+        background-image:url('./footer.png');
+        width: 100%;
+        height: 190px;
+      }
+      .footer__title{
+        color: #6A696C;
+        padding-top: 20px;
+      }
+      tr{
+       height: 32px !important;
+      }
+      td{
+        display: inline-block;
+        width: 36px !important;
+      }
+      .wedding{
+        display: inline-block;
+        background-image:url('./data-heart.svg');
+        height: 27px;
+        padding: 6px 0 0 0;
+        width: 36px;
+      }
+      .site{
+        display: block;
+        color: #fff;
+        text-align: end;
+      }
+      @media (max-width: 410px) {
+        .husband{
+          font-size: 90px;
+        }
+        h2{
+          font-size: 22px;
+        }
+        p{
+          font-size: 12px;
+        }
+        .example__img{
+          width: 30%;
+        }
+        .example__img2{
+          width: 45%;
+        }
+}
