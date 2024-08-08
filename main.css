@@ -187,12 +187,14 @@ table {
       .data__offer{
         display: inline-flex;
         margin: 20px 0;
-        position: relative;
+        align-items:center;
     }
       }
-      .data__text{
-        margin-right: 30px;
-      }
+      .line-heart{
+        width: 9px;
+        height: 31px;
+        margin: 0 15px;
+    }
       .data__text::after{
         content:'';
         display: block;
