@@ -84,9 +84,41 @@ table {
         flex-direction: column;
         align-items: center;
     }
-    .couple-img{
-        width: 50%;
+        .couple-img {
+      opacity: 0;
+      position: relative;
+      animation: slide-in 1s ease-out forwards;
+      width: 50%;
+  }
+  .couple-img_1 {
+    animation-name: slide-in-left;
+}
+
+.couple-img_2 {
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        left: -150px;
     }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        right: -150px;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
     .header__offer::before{
         content: '';
         display: block;
