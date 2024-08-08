@@ -195,16 +195,6 @@ table {
         height: 31px;
         margin: 0 15px;
     }
-      .data__text::after{
-        content:'';
-        display: block;
-        background-image: url('./heart-line.svg');
-        width: 9px;
-        height: 31px;
-        position: absolute;
-        left: 94px;
-        top: -8px;
-    }
       table{
         width: 80%;
         height: 150px;
@@ -268,7 +258,6 @@ table {
         margin: 15px 0 30px;
       }
       .radio-container{
-        width: 180px;
         height: 24px;
         display: flex;
         text-align: left;
